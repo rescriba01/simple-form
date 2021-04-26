@@ -17,7 +17,7 @@
     </header>
     <form id="survey-form">        
         <div class="form-body">
-            <div class="form-field">
+            <div class="form-group">
                 <fieldset>
                     <label for="name" id="name-label">
                         <span>Name</span> <input autofocus class="form-field__input" name="name" type="text" id="name" placeholder="Your full name">
@@ -32,8 +32,17 @@
                 <fieldset>
                     <label for="age" id="number-label">
                         <span>Age</span> <input class="form-field__input" name="age" type="number" id="number" min="1" max="99" placeholder="Age">
+                        <!-- TODO: Non-numbers should trigger HTML5 validation error -->
+                        <!-- TODO: Numbers outside the min and max range should trigger HTML5 validation error -->
                     </label>
                 </fieldset>
+            </div>
+            <div class="form-group">
+                <label for="dropdown"></label>
+                <select name="dropdown" id="dropdown">
+                    <option value="">value</option>
+                    <option value="">value</option>
+                </select>
             </div>
         </div>
         <div class="form-footer">
