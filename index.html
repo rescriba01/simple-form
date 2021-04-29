@@ -11,28 +11,34 @@
 </head>
 
 <body>
-    <header>
-        <h1 id="title">Survey Form</h1>
-        <p id="description">A short survey to use to gain insight.</p>
-    </header>
-    <form id="survey-form">        
-        <div class="form-body">
-            <div id="personal-info" class="form-group">
-                <fieldset>
-                    <label for="name" id="name-label">
-                        <span>Name</span> <input autofocus class="form-field__input" name="name" type="text" id="name" placeholder="Your full name">
-                    </label><br>
+<header>
+    <h1 id="title">How are you progressing on FreeCodeCamp</h1>
+    <p id="description">A short survey to use to gauge how you're feeling about FCC</p>
+</header>
+<form id="survey-form">
+    <div class="form-body">
+        <div id="personal-info" class="form-group">
+            <fieldset>
+                <label for="name" id="name-label">
+                    <span>Name</span> <input autofocus class="form-field__input" name="name" type="text" id="name"
+                                             placeholder="Your full name">
+                </label><br>
 
-                    <label for="email" id="email-label">
-                        <span>Email</span><strong><abbr title="required">*</abbr></strong> <input class="form-field__input" name="usermail" type="email" id="email" placeholder="Your email address">
-                    </label><br>
+                <label for="email" id="email-label">
+                    <span>Email</span><strong><abbr title="required">*</abbr></strong> <input class="form-field__input"
+                                                                                              name="usermail"
+                                                                                              type="email" id="email"
+                                                                                              placeholder="Your email address">
+                </label><br>
 
-                    <label for="age" id="age-label">
-                        <span>Age</span> <input class="form-field__input" name="age" type="number" id="age" min="10" max="75" placeholder="Age">
-                    </label>
-                </fieldset>
-            </div>
-            <div id="course-select" class="form-group">
+                <label for="age" id="age-label">
+                    <span>Age</span> <input class="form-field__input" name="age" type="number" id="age" min="10"
+                                            max="75" placeholder="Age">
+                </label>
+            </fieldset>
+        </div>
+        <div id="course-select" class="form-group">
+            <fieldset>
                 <label for="dropdown">What FreeCodeCamp Course are you currently pursuing:</label>
                 <select name="dropdown" id="dropdown">
                     <option value="" selected>--Please choose an option--</option>
@@ -47,44 +53,44 @@
                     <option value="is-cert">Information Security Certification</option>
                     <option value="mlpython-cert">Machine Learning with Python Certification</option>
                 </select>
-            </div>
-            <div id="course-time" class="form-group">
-                <fieldset>
+                <div id="course-time" class="form-group">
                     <label for="number" id="number-label">
-                        <span>Hours</span> <input class="form-field__input" name="hours" type="number" id="number" min="1" max="299" placeholder="Hours into course">
+                        <span>Hours</span> <input class="form-field__input" name="hours" type="number" id="number"
+                                                  min="1" max="299" placeholder="Hours into course">
                     </label>
-                </fieldset>
-            </div>
-            <div id="morale" class="form-group">
-                <fieldset>
-                    <legend id="morale-question">How are you feeling about the course so far?</legend>
-
-                    <input type="checkbox" id="great" name="great" value="great">
-                    <label for="great">I feel great! Can't wait to learn more.</label><br>
-
-                    <input type="checkbox" id="fine" name="fine" value="fine">
-                    <label for="fine">I feel fine. I need to learn a bit more first.</label><br>
-
-                    <input type="checkbox" id="ok" name="ok" value="ok">
-                    <label for="ok">I feel ok but I may need extra help.</label><br>
-
-                    <input type="checkbox" id="lost" name="lost" value="lost">
-                    <label for="lost">I'm lost and can't find the exit!</label><br>
-
-                    <input type="checkbox" id="ehh" name="ehh" value="ehh">
-                    <label for="ehh">Ehh...not sure</label>
-                </fieldset>
-            </div>
+                </div>
+            </fieldset>
         </div>
-        <div id="comment-area">
-            <label for="additional-comments">Additional Comments:</label>
+        <div id="morale" class="form-group">
+            <fieldset>
+                <legend id="morale-question">How are you feeling about it?</legend>
 
-            <textarea name="add-comments" id="additional-comments" cols="37" rows="10" placeholder="I think..."></textarea>
+                <input type="checkbox" id="great" name="great" value="great">
+                <label for="great">I feel great! Can't wait to learn more.</label><br>
+
+                <input type="checkbox" id="fine" name="fine" value="fine">
+                <label for="fine">I feel fine. I need to learn a bit more first.</label><br>
+
+                <input type="checkbox" id="ok" name="ok" value="ok">
+                <label for="ok">I feel ok but I may need extra help.</label><br>
+
+                <input type="checkbox" id="lost" name="lost" value="lost">
+                <label for="lost">I'm lost and can't find the exit!</label><br>
+
+                <input type="checkbox" id="ehh" name="ehh" value="ehh">
+                <label for="ehh">Ehh...not sure</label>
+            </fieldset>
         </div>
-        <div class="form-footer">
-            <button id="submit" class="btn btn-primary" type="submit">Submit</button>
-        </div>
-    </form>
+    </div>
+    <div id="comment-area">
+        <label for="additional-comments">Additional Comments:</label>
+
+        <textarea name="add-comments" id="additional-comments" cols="37" rows="10" placeholder="I think..."></textarea>
+    </div>
+    <div class="form-footer">
+        <button id="submit" class="btn btn-primary" type="submit">Submit</button>
+    </div>
+</form>
 </body>
 
 </html>
