@@ -17,7 +17,7 @@
     </header>
     <form id="survey-form">        
         <div class="form-body">
-            <div class="form-group">
+            <div id="personal-info" class="form-group">
                 <fieldset>
                     <label for="name" id="name-label">
                         <span>Name</span> <input autofocus class="form-field__input" name="name" type="text" id="name" placeholder="Your full name">
@@ -26,23 +26,38 @@
                 <fieldset>
                     <label for="email" id="email-label">
                         <span>Email</span><strong><abbr title="required">*</abbr></strong> <input class="form-field__input" name="usermail" type="email" id="email" placeholder="Your email address">
-                        <!-- TODO: Ensure email is validated-->
                     </label>
                 </fieldset>
                 <fieldset>
-                    <label for="age" id="number-label">
-                        <span>Age</span> <input class="form-field__input" name="age" type="number" id="number" min="1" max="99" placeholder="Age">
+                    <label for="age" id="age-label">
+                        <span>Age</span> <input class="form-field__input" name="age" type="number" id="age" min="10" max="75" placeholder="Age">
+                    </label>
+                </fieldset>
+            </div>
+            <div id="course-select" class="form-group">
+                <label for="dropdown">What FreeCodeCamp Course are you currently pursuing:</label>
+                <select name="dropdown" id="dropdown">
+                    <option value="" selected>--Please choose an option--</option>
+                    <option value="responsive-cert">Responsive Web Design Certification</option>
+                    <option value="jsalgorithms-cert">JavaScript Algorithms and Data Structures Certification</option>
+                    <option value="frontend-cert">Front End Development Libraries Certification</option>
+                    <option value="datavisual-cert">Data Visualization Certification</option>
+                    <option value="api-cert">APIs and Microservices Certification</option>
+                    <option value="qa-cert">Quality Assurance Certification</option>
+                    <option value="sccomputing-cert">Scientific Computing with Python Certification</option>
+                    <option value="dataanalysis-cert">Data Analysis with Python Certification</option>
+                    <option value="is-cert">Information Security Certification</option>
+                    <option value="mlpython-cert">Machine Learning with Python Certification</option>
+                </select>
+            </div>
+            <div id="course-time" class="form-group">
+                <fieldset>
+                    <label for="number" id="number-label">
+                        <span>Hours</span> <input class="form-field__input" name="hours" type="number" id="number" min="1" max="299" placeholder="Hours into course">
                         <!-- TODO: Non-numbers should trigger HTML5 validation error -->
                         <!-- TODO: Numbers outside the min and max range should trigger HTML5 validation error -->
                     </label>
                 </fieldset>
-            </div>
-            <div class="form-group">
-                <label for="dropdown"></label>
-                <select name="dropdown" id="dropdown">
-                    <option value="">value</option>
-                    <option value="">value</option>
-                </select>
             </div>
         </div>
         <div class="form-footer">

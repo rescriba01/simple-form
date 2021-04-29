@@ -8,3 +8,7 @@ form {
     margin: 0 auto;
     padding: 20px;
 }
+
+select {
+    max-width: 13.5rem;
+}
