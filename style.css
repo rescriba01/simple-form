@@ -47,6 +47,16 @@ body {
     margin: 0;
 }
 
+input,
+button,
+select,
+textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
 header {
     text-align: center;
 }
@@ -80,5 +90,14 @@ select {
 
 #course-time {
     /*display: none;*/
+}
+
+#morale fieldset {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+input[type="checkbox"] {
+    height: 1.3rem;
 }
 
